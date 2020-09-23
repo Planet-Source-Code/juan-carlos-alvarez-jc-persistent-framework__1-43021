@@ -1,0 +1,12 @@
+jcframework001:
+
+Mapping objects with tables without relations.
+Only MsAccess databases.
+
+jcframework002:
+
+Adds relations to objects (one to one, one to many).
+
+jcframework003:
+
+The jcframework supports now a two (Test2JCFramework)  or three (Test3JCFramework) tier application with MsAccess and MySql databases without changing any line of code. See "readme for mysql install.txt" and "readme for test3.txt".

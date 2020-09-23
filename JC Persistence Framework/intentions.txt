@@ -1,0 +1,21 @@
+Private Description
+
+The JCFramework is a persistence framework that handle's database transactions, so the developer can do the programming in a n-tier application whithout taking care of the database layer.
+
+The project is intended to handle connections and transactions with relational databases like Access, MySql, SqlServer, DB2, Oracle, Informix, etc.
+
+The purpose is to decrease the time to develop the database layer in small and midle applications with this framework.
+
+The project has been developed in Visual Basic 6.0 based in the Persistence Layer paper written by Scott Ambler.
+
+Supported Platforms: All windows versions.
+
+NO extra libraries are needed.
+
+It could be developed in VB.net too.
+
+Public Description
+
+The JC Persistence framework written in Visual Basic 6.0 is intended to manage transactions in a transparent maner to the developer in any relational database, focused on Object oriented programming, mappings your objects with the database through an XML configuration file.
+
+The project is based on the Persistence Layer written by Scott Ambler, Ambysoft inc (http://www.ambysoft.com/persistenceLayer.pdf).

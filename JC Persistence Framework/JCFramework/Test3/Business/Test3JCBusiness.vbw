@@ -1,0 +1,6 @@
+CAccount = 0, 0, 0, 0, C
+CCountry = 0, 0, 0, 0, C
+CUser = 0, 0, 0, 0, C
+modSetAttributeValue = 0, 0, 0, 0, C
+CJCCollectionManager = 0, 0, 0, 0, C
+CJCFrameworkInit = 0, 0, 0, 0, C

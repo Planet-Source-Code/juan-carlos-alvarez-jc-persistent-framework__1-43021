@@ -1,0 +1,6 @@
+VBGROUP 5.0
+Project=JCFramework\Test\TestJCFramework.vbp
+Project=JCFramework\JCFramework.vbp
+Project=JCFramework\Test2\Test2JCFramework.vbp
+StartupProject=..\JC Persistence Framework\JCFramework\Test3\Test3JCFramework.vbp
+Project=..\JC Persistence Framework\JCFramework\Test3\Business\Test3JCBusiness.vbp
