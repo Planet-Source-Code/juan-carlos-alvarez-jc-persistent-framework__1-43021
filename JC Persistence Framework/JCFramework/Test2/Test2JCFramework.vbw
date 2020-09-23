@@ -1,0 +1,7 @@
+frmTest2 = 110, 110, 436, 424, C, 88, 88, 414, 402, C
+CUser = 0, 0, 0, 0, C
+CAccount = 0, 0, 0, 0, C
+frmAccounts = 44, 44, 349, 354, C, 0, 0, 305, 310, C
+CCountry = 0, 0, 0, 0, C
+frmAccount = 22, 22, 344, 325, C, 110, 110, 432, 413, C
+modSetAttributeValue = 0, 0, 0, 0, C

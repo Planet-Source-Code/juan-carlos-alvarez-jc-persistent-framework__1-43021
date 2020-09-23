@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<map>
+	<database name="MsAccess" class="CMsAccessDatabase">
+		<parameter name="name" value="C:\JC Persistence Framework\JCFramework\Test\Base\test.mdb"/>
+		<parameter name="user" value="anyuser"/>
+		<parameter name="password" value="anypassword"/>
+	</database>
+
+	<class name="CPersona" table="persona" database="MsAccess">
+		<attribute name="id" column="id" key="primary" />
+		<attribute name="name" column="name" />
+	</class>
+</map>

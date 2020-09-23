@@ -1,0 +1,18 @@
+ODBC Driver for MySQL (via MyODBC) 
+To connect to a local database
+
+oConn.Open "Driver={mySQL};" & _ 
+           "Server=MyServerName;" & _
+           "Option=16834;" & _
+           "Database=mydb"
+ 
+To connect to a remote database
+
+oConn.Open "Driver={mySQL};" & _ 
+           "Server=db1.database.com;" & _
+           "Port=3306;" & _
+           "Option=131072;" & _
+           "Stmt=;" & _
+           "Database=mydb;" & _
+           "Uid=myUsername;" & _
+           "Pwd=myPassword"

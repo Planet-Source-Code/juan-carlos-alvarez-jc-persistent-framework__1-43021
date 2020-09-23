@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<map>
+	<database name="MySql" class="CMySqlDatabase">
+		<parameter name="name" value="test2"/>
+		<parameter name="serverName" value="localhost"/>
+		<parameter name="user" value="root"/>
+		<parameter name="password" value=""/>
+		<parameter name="portNumber" value="3306"/>
+		<parameter name="option" value="16834"/>
+	</database>
+
+	<class name="CUser" table="cliente" database="MySql">
+		<attribute name="UserId" column="userid" key="primary"/>
+		<attribute name="Firstname" column="firstname"/>
+		<attribute name="Lastname" column="lastname"/>
+		<attribute name="Address" column="address"/>
+		<attribute name="Telephone" column="telephone"/>
+		<attribute name="Username" column="username"/>
+		<attribute name="Password" column="passwd"/>
+		<attribute name="DateOfBirth" column="dateofbirth"/>
+		<attribute name="DateOfAdded" column="dateofadded"/>
+		<attribute name="EMail" column="email"/>
+		<attribute name="CountryId" column="countryid"/>
+		<attribute name="Country"/>
+		<attribute name="Accounts"/>
+	</class>
+	<class name="CCountry" table="pais" database="MySql">
+		<attribute name="CountryId" column="countryId" key="primary"/>
+		<attribute name="Description" column="description"/>
+	</class>
+	<class name="CAccount" table="cuenta" database="MySql">
+		<attribute name="AccountId" column="accountid" key="primary"/>
+		<attribute name="UserId" column="userId"/>
+		<attribute name="Description" column="description"/>
+	</class>
+
+	<association fromClass="CUser"
+		toClass="CAccount"
+		cardinality="oneToMany"
+		target="Accounts"
+		retrieveAutomatic="true"
+		deleteAutomatic="true"
+		saveAutomatic="true"
+		inverse="false">
+		<entry fromAttribute="UserId" toAttribute="UserId"/>
+	</association>
+
+	<association fromClass="CUser"
+		toClass="CCountry"
+		cardinality="oneToOne"
+		target="Country"
+		retrieveAutomatic="true"
+		deleteAutomatic="false"
+		saveAutomatic="true"
+		inverse="false">
+		<entry fromAttribute="CountryId" toAttribute="CountryId"/>
+	</association>
+</map>
